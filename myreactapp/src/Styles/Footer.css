@@ -1,0 +1,80 @@
+:root {
+	--mainColorLight: #CCDEDC;
+	--secondaryColor:#8cc8d2;
+	--textColor: #005271;
+}
+.footer-outerarea {
+  padding: 0px 10% 30px 17%;
+  background-color: var(--mainColorLight);
+}
+.footer-col {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  line-height: 30px;
+  background-color:var(--mainColorLight);
+}
+.footer-row {
+  margin: 15px 0px 15px 10px;
+}
+.footer-subtitle {
+  font-size: 1.2rem;
+  color: var(--textColor);
+}
+
+.footer-li-item {
+  margin: 0px 0px 0px 7px;
+  color: var(--textColor);
+  padding: 0;
+}
+.footer-li-item:hover {
+  color:#112943 ;
+}
+
+.footer-li-icontainer {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+}
+
+.footer-li-icontainer li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondaryColor);
+  text-align: center;
+  border-radius: 50%;
+}
+.footer-li-icon {
+  all: unset;
+  display: inline-block;
+  color: white;
+  margin-top: 5px;
+  transition: all .12s ease-in-out; 
+  font-size: 1.3rem;
+}
+.footer-li-icon:hover{
+  transform: scale(1.2);   
+  cursor: pointer;
+}
+
+#cpright {
+  background-color:var(--textColor);
+  text-align: center;
+  padding: 10px 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color:var(--mainColorLight);
+  margin: -10px 0;
+}
+
+@media (max-width: 500px) {
+  .footer-outerarea {
+    padding: 0px 10% 20px 17%;
+  }
+  .footer-col {
+    grid-template-columns: 80%;
+  }
+  .footer-subtitle {
+    font-size: 5.5vw;
+  }
+}
