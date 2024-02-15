@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #CCDEDC;
+    display: flex;
+    flex-direction: row;
+    border-bottom: white 300px;
+  }
+  .navbar .leftside {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  .navbar .leftside img {
+    width: 70px;
+  }
+  .navbar .rightside {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .navbar a{
+    color: #005271;
+    text-decoration: none;
+    margin: 1.4rem;
+  }
+.login-btn{
+    background-color: #8CC8D2;
+    padding: .625rem;
+    border-radius: .31rem;
+    transition: all .12s ease-in-out; 
+}
+.login-btn:hover{
+    transform: scale(1.02);   
+}
+
+  .navbar .rightside button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar .rightside svg {
+    font-size: 40px;
+  }
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  .navbar #close img {
+    display: inherit;
+  }
+
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+
+    
+  
+  
