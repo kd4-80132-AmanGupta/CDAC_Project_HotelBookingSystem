@@ -1,0 +1,301 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\HotelBookingApp\\HotelBookingApp.csproj": {}
+  },
+  "projects": {
+    "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj",
+        "projectName": "EntityModelsLib",
+        "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj",
+        "packagesPath": "C:\\Users\\somut\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\somut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\HotelBookingApp\\HotelBookingApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\HotelBookingApp\\HotelBookingApp.csproj",
+        "projectName": "HotelBookingApp",
+        "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\HotelBookingApp\\HotelBookingApp.csproj",
+        "packagesPath": "C:\\Users\\somut\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\HotelBookingApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\somut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj": {
+                "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj"
+              },
+              "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\RepositoryLib.csproj": {
+                "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\RepositoryLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\RepositoryLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\RepositoryLib.csproj",
+        "projectName": "RepositoryLib",
+        "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\RepositoryLib.csproj",
+        "packagesPath": "C:\\Users\\somut\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\RepositoryLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\somut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj": {
+                "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\EntityModelsLib\\EntityModelsLib.csproj"
+              },
+              "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\UtilityLib.csproj": {
+                "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\UtilityLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\UtilityLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\UtilityLib.csproj",
+        "projectName": "UtilityLib",
+        "projectPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\UtilityLib.csproj",
+        "packagesPath": "C:\\Users\\somut\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY MATERIAL\\.NET\\Self_Demos\\UtilityLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\somut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
