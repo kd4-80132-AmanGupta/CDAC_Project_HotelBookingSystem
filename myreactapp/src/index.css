@@ -1,0 +1,20 @@
+
+.cart{
+    width: 200px;
+    border: 1px solid black;
+}
+
+.cart > img {
+    width: 100%;
+}
+
+.hotel{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.cart-link{
+    text-decoration: none;
+    color: black;
+    cursor:pointer
+}

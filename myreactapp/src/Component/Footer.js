@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "../Styles/Footer.css";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -68,7 +63,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook />
+                 <FaFacebook></FaFacebook>
                 </a>
               </li>
               <li>
@@ -78,7 +73,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram />
+                 
                 </a>{" "}
               </li>
               <li>
@@ -88,7 +83,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin />
+                 
                 </a>{" "}
               </li>
               <li>
@@ -98,7 +93,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaEnvelope />
+                 
                 </a>{" "}
               </li>
             </ul>

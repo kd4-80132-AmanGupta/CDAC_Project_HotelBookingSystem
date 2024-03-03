@@ -1,0 +1,21 @@
+.logo{
+    font-size: 28px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.c1{
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.b1{
+    margin-left: 200px;
+}

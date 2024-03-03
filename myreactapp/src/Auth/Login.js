@@ -1,19 +1,15 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { useHistory } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
+import { useHistory, Link } from "react-router-dom"; 
 import axios from "axios"; 
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Login = () => {
-
-  const history = useHistory();
-
+    const history = useHistory();
     const [emailId, setEmailId] = useState('');
     const [password, setPassword] = useState('');
-  
-
-    useEffect(() => {
-        sessionStorage.clear();
-    }, []);
+    const [loginid, setloginid] = useState([]);
 
     const ProceedLoginusingAPI = (e) => {
         e.preventDefault();
@@ -22,17 +18,32 @@ const Login = () => {
                 emailId: emailId,
                 password: password
             };
-           console.log(inputobj);
-            axios.post("http://localhost:5216/users/Login", inputobj)
+            console.log(inputobj);
+            
+            axios.post("http://localhost:5020/User/Login", inputobj)
                 .then((response) => {
-                    console.log(response.data);
+                    console.log(response.data.token);
                     if (Object.keys(response.data).length === 0) {
                         toast.error('Login failed, invalid credentials');
                     } else {
                         toast.success('Success');
+                       // sessionStorage.clear();
                         sessionStorage.setItem('emailId', emailId);
-                        sessionStorage.setItem('jwttoken', response.data.jwtToken);
-                        history.push("/home");
+                        sessionStorage.setItem('jwttoken', response.data.token);
+                        sessionStorage.setItem('RoleId', response.data.roleId);
+                        sessionStorage.setItem('UserId', response.data.userId);
+                        sessionStorage.setItem('UserName', response.data.name);
+                           var id = sessionStorage.getItem("RoleId");
+                           debugger
+                            setloginid(id);
+                        if(id==1){
+                            history.push("/user");
+                            console.log("1");
+                        }
+                        else{
+                            console.log("2");
+                            history.push("/hotelmanager");
+                        }
                     }
                 })
                 .catch((error) => {
@@ -55,8 +66,8 @@ const Login = () => {
     }
 
     return (
-        <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+        <div className="row justify-content-center">
+            <div className="offset-lg-3 col-lg-6 m-4" style={{ marginTop: '100px' }}>
                 <form onSubmit={ProceedLoginusingAPI} className="container">
                     <div className="card">
                         <div className="card-header">
@@ -73,7 +84,9 @@ const Login = () => {
                             </div>
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Login</button> 
+                            <button type="submit" className="btn btn-success">Login</button> 
+                            <p>Don't have an Account? <Link to="/signup">Sign Up Here</Link></p> 
+                            <Link to="/user/forgot-password">Forgot Password?</Link>
                         </div>
                     </div>
                 </form>
